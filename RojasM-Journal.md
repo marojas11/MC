@@ -8,10 +8,10 @@ Herramientas del curso
 + C
 + Python
 
-y metodos
-1. interpolación
+y Metodos tales como
+1. Interpolacion
 2. Fourier
-3. Diferenciación e Integración
+3. Diferenciacion e Integracion
 4. EDO
 5. EDP
-6. métodos de MonteCarlo
+6. Metodos de MonteCarlo
