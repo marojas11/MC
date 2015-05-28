@@ -2,11 +2,11 @@
 ¡Hola mundo!, comienzo **Metodos Computacionales**
 
 Herramientas del curso
-+git,
-+GitHub,
-+bash,
-+C,
-+Python,
++ git
++ GitHub
++ bash
++ C
++ Python
 
 y metodos
 1. interpolación
