@@ -1,6 +1,6 @@
 #Primera Clase <date>
 ¡Hola mundo!, comienzo **Metodos Computacionales**
-'
+
 Herramientas del curso
 +git,
 +GitHub,
@@ -9,6 +9,7 @@ Herramientas del curso
 +Ṕython,
 
 y metodos
+
 1, interpolación
 2, Fourier
 3, Diferenciación e Integración
