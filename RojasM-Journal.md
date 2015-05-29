@@ -19,3 +19,8 @@ y Metodos tales como
 5. EDP
 6. Metodos de MonteCarlo
 
+
+git pull origin
+git commit -a -m "Finish"
+git push origin master
+
