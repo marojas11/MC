@@ -18,7 +18,8 @@
 
 [1]: https://github.com/marojas11/MC
 
-``` #Metodos Computacionales
+```
+#Metodos Computacionales
 
 ##Magistral
 + Markdown
