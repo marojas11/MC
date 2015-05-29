@@ -18,5 +18,4 @@ y Metodos tales como
 4. EDO
 5. EDP
 6. Metodos de MonteCarlo
-7. 
 
