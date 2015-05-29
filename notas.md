@@ -8,5 +8,8 @@ varbash
 
 awk -v varawk=$varbash
 
+var=$(echo $((1+2)))
+  echo $var
+
 ```
 
