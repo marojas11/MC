@@ -1,4 +1,4 @@
-for i in {1..1000}
+for i in {0..1000}
 do
   a=$((i*i))
   echo $i","$a >> punto2t1.csv

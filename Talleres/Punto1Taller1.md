@@ -71,4 +71,7 @@ date +"%T" | figlet
 sleep 1
 clear
 done
+#Punto 6
+for i in {1..150}; do wget http://xkdc.com/$i; done
+
 ```
