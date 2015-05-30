@@ -62,3 +62,13 @@ echo $1, $2
 a=$(($1 + $2))
 echo $a
 ```
+```
+#Punto 5
+while :
+do
+echo "Presione ctrl+c para salir"
+date +"%T" | figlet
+sleep 1
+clear
+done
+```
