@@ -147,3 +147,23 @@ gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
 PAra SSh
 ssh ma.rojas11@compufi3.uniandes.edu.co
 
+PAra integrar gnuplot con bash
+```
+gnuplot <<EOF
+.
+.
+.
+EOF
+```
+log para hacer entradas a la bitacora
+
+###Handson2
+
+1. Expresión Regular ` ^.{4}\s ` donde el gorro representa inicio de linea, punto cualquir caracter, {4} que se repite 4 veces y \s para el espacio vacío. Permite hacer búsquedas o reemplazos de palabras de cuatro letras al inicio de uan línea
+2. En bash
+```
+sed -E 's/^.{5}$//g' wikipedia.txt >a.txt
+sed -E 's/^\s{4}//g' a.txt > wikipedia.txt 
+sed -E 's/(: )/\t/g' wikipedia.txt > a.txt
+
+2. 
