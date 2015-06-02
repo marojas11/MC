@@ -144,4 +144,6 @@ gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
 
 
 ```
+PAra SSh
+ssh ma.rojas11@compufi3.uniandes.edu.co
 
