@@ -191,7 +191,11 @@ y(x)=m*x+b
 fit y(x)  'galaxies.csv' using 2:3 via m,b
 replot 
 
-
+##Lenguaje C
+Se debe compilar
+```
+gcc -o integers.out integers.c
+```
 
 
 
