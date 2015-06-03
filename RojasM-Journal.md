@@ -165,5 +165,33 @@ log para hacer entradas a la bitacora
 sed -E 's/^.{5}$//g' wikipedia.txt >a.txt
 sed -E 's/^\s{4}//g' a.txt > wikipedia.txt 
 sed -E 's/(: )/\t/g' wikipedia.txt > a.txt
+```
 
-2. 
+
+#Clase2 Semana2
+##Tasas de Cambio: Dolares
+Limitar google site:http://...
+grep para filtrar lineas que nos interesa
+mac > pbcopy
+Borrar slash, puntos letras 
+`sed -E 's/<[^>]*>//g'  ` ^ para negar algo en regexp, usado para borrar codigo html
+usar w3m para renderizar página web
+sed 
+```
+gnuplot
+set datafile separator
+plot 'dollar.csv' 
+set xdata time #fijar el tipo de datos en x
+set timefmt "%m/%d/%Y"
+```
+##Información de Expansion del Universo
+ley de expasion de Hubble
+realizar un fig oregresion 
+y(x)=m*x+b
+fit y(x)  'galaxies.csv' using 2:3 via m,b
+replot 
+
+
+
+
+
