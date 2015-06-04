@@ -1,4 +1,6 @@
-#Primera Clase <date>
+#Primera Semana
+##Primera Clase <date>
+###27/05/2015
 ¡Hola mundo!, comienzo **Metodos Computacionales**
 
 Herramientas del curso
@@ -20,134 +22,113 @@ y Metodos tales como
 6. Metodos de MonteCarlo
 
 
+
+
+##Clase 2
+###29/05/2015
+
+###Primer Laboratorio
+Esta sesión de laboratorio me pareció bastante interesante aunque el tiempo fue demasiado corto para tantas actividades por realizar, o tal vez por lo que apenas empiezo a familiarizarme de nuevo con estos comandos. 
+El ejercicio de markdown me permitió entender el funcionamiento de su codigo y las posibilidades que tienen estos archivos para escribir texto de una forma rápida y sencilla. Además de agregar fácilmente lineas de código resaltadas en el texto.
+Los ejercicios de bash me han permitido entender mejor el funcionamiento de los comandos de awk, los cálculos en construcción a doble paréntesis, ciclos, comandos curiosos como figlet para cambiar a un formato gráfico las palabras. 
+
+###Clase 
+HandsOn1
+Ya manejo git al fin!. Luego de intentar demasiadas veces subir un archivo al repositorio entendí el ciclo diario. 
+```
 git pull origin
+git add carpeta/
+git add archivo.extension 
 git commit -a -m "Finish"
 git push origin master
+```
+Me pareció bastante interesante poder conocer anteriores commits realizados en git, además de toda la historia guardada por medio de los commits, no tenía idea que se pudiera hacer ello. 
 
+En clase exploramos ssh para ir a una página de internet sdf.org tal como super dimensional fortress en la cual hay muchas actividades disponibles en linea como juegos, chats, entre otros y tiene ya muchos años de existencia. 
+Por último un Cambio de variables de **bash** hacia *awk*
+
+```
+varbash
+
+awk -v varawk=$varbash
+
+var=$(echo $((1+2)))
+  echo $var
+```
 #Semana 2
-##Caracteres Especiales
-```
-^
-$
-.
-.*
-.+
-(a|b)
-\(
-[ayz\(]
-[a-z] alfabeto
-[0-1]
-\d
-\D
-[^0-3]
-```
+##Clase 3
+###2/06/2015 
+###Caracteres Especiales
+
++ ^ inicio de linea
++ $ fin de linea
++ . cualquier caracter
++ .* 
++ .+ varios caracteres 
++ (a|b) 
++ \( expresion especial
++ [ayz\(]
++ [a-z] alfabeto
++ [0-1] numeros
++ \d digitos
++ \D No digitos
++ [^0-3] No numeros
+
+Sed para usar expresiones regulares cuando no se que editor de texto me sirve ;(
 ```
  sed -E 's/\(.*\)//g' claseSem2.txt 
  sed -E 's/^ *//g' claseSem2a.txt
  sed -E 's/ +/,/g' claseSem2.txt 
 ```
 
-##Gnuplot
-
+###Gnuplot
+Programa para realizar gráficas
 ```
 gnuplot
-set term dumb
+set term dumb #Visor Ascii
 plot x
 plot [0:2*pi] sin(x)
+```
 
-ma.rojas11@compufi17:~/MC> gnuplot
+gnuplot entra a un sistema distinto, es necesario usar nuevos comandos
+```
+gnuplot> set term 'qt' #Gráficas aparte
 
-        G N U P L O T
-        Version 4.6 patchlevel 3    last modified 2013-04-12 
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-
-gnuplot> set term 'qt'
-Terminal type set to 'qt'
-Options are '0 font "Sans,9"'
 gnuplot> plot sin(x)
 gnuplot> plot sin(x)/x
-gnuplot> plot sin(x)^x
-         non-integer passed to boolean operator
-
-gnuplot> plot sin^x(x)
-         undefined variable: sin
-
-gnuplot> plot (sin(x))^x
-         non-integer passed to boolean operator
-
-gnuplot> plot (sin(x))**x
-gnuplot> plot x**x
-gnuplot> sin(x)
-         ^
-         invalid command
-
-gnuplot> plot sin(x)
-gnuplot> plot sin(x)
-gnuplot> exit
-ma.rojas11@compufi17:~/MC> gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 3    last modified 2013-04-12 
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-
-gnuplot> set term 'qt'
-
-Options are '0 font "Sans,9"'
-gnuplot> plot sin(x)
-gnuplot> set title sin(x)
-         undefined variable: x
-
-gnuplot> plot t
-         undefined variable: t
-
-gnuplot> plot x
+gnuplot> plot sin(x)**x
 gnuplot> plot x**x
 gnuplot> plot 1/x
-gnuplot> plot sin(x)
-gnuplot> set parametric
+gnuplot> exit
 
+```
+Tambien paramétricas
+```
+ma.rojas11@compufi17:~/MC> gnuplot
+gnuplot> set term 'qt'
+gnuplot> set parametric
         dummy variable is t for curves, u/v for surfaces
 gnuplot> plot cos(t),sin(t)
 gnuplot> set size ratio 1
-
 gnuplot> plot cos(t),sin(t)
 gnuplot> unset parametric
-
         dummy variable is x for curves, x/y for surfaces
 gnuplot> splot x**2+y**2
-
 gnuplot> set datafile separator ","
-gnuplot> plot "joviansatellites.csv" using 2:3
 gnuplot> plot "joviansatellites.csv" using 2:3
 gnuplot> plot "joviansatellites.csv" using 2:3 with lines
 gnuplot> plot "joviansatellites.csv" using 2:3 with circles
 gnuplot> plot "joviansatellites.csv" using 2:3 with linesp
+#Crear Funciones !!!
 gnuplot> quad(x)=x**2
 gnuplot> cube(x)=x**3
+#Archivos
 gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
-
-
 ```
-PAra SSh
+Para SSh
 ssh ma.rojas11@compufi3.uniandes.edu.co
 
-PAra integrar gnuplot con bash
+PAaa integrar gnuplot con bash
 ```
 gnuplot <<EOF
 .
@@ -159,7 +140,7 @@ log para hacer entradas a la bitacora
 
 ###Handson2
 
-1. Expresión Regular ` ^.{4}\s ` donde el gorro representa inicio de linea, punto cualquir caracter, {4} que se repite 4 veces y \s para el espacio vacío. Permite hacer búsquedas o reemplazos de palabras de cuatro letras al inicio de uan línea
+1. Expresión Regular ` ^.{4}\s ` donde el gorro representa inicio de linea, punto cualquier caracter, {4} que se repite 4 veces y \s para el espacio vacío. Permite hacer búsquedas o reemplazos de palabras de cuatro letras al inicio de una línea
 2. En bash
 ```
 sed -E 's/^.{5}$//g' wikipedia.txt >a.txt
@@ -168,8 +149,15 @@ sed -E 's/(: )/\t/g' wikipedia.txt > a.txt
 ```
 
 
-#Clase2 Semana2
-##Tasas de Cambio: Dolares
+##Clase4
+###03/062015
+###Laboratorio
+
+No sé si fue suerte o no pero me van a revisar mi primer taller :( espero que me vaya bien, Para saberlo hice awk, fue casi automático, lo único fue cambiar el separador y todo bien. Hacer el punto de expresiones regulares no fue nada fácil, tuve que entenderlos casi a las malas... 
+Punto a punto fui haciendo los respectivos reemplazos y obtuve que el de menor cambio porcentual es la Registraduría, algo bastante "comun" nada sorprendente
+Con gnuplot he logrado comprobar la linealidad de la ley de kepler a través de los reemplazos correspondientes y su correcta alimentación 
+
+###Tasas de Cambio: Dolares
 Limitar google site:http://...
 grep para filtrar lineas que nos interesa
 mac > pbcopy
@@ -191,7 +179,7 @@ y(x)=m*x+b
 fit y(x)  'galaxies.csv' using 2:3 via m,b
 replot 
 
-##Lenguaje C
+###Lenguaje C
 Se debe compilar
 ```
 gcc -o integers.out integers.c
