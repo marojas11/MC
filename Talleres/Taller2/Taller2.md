@@ -23,7 +23,7 @@ head -1 pgn2.dat
 
 rm pgn2.dat pgn.dat
 ```
-#Punto 3 Satruno
+#Punto 3 Saturno
 ```
 sed -E 's/^\s//g' orbital.csv > 1.csv
 sed -E 's/\,([0-9])/\1/g' 1.csv> orbital.csv 
