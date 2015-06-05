@@ -159,7 +159,7 @@ sed -E 's/(.{20})/$1\n/g' pi2.txt >PIslices20.dat
 
 
 ##Clase4
-###03/062015
+###03/06/2015
 ###Laboratorio
 
 No sé si fue suerte o no pero me van a revisar mi primer taller :( espero que me vaya bien, Para saberlo hice awk, fue casi automático, lo único fue cambiar el separador y todo bien. Hacer el punto de expresiones regulares no fue nada fácil, tuve que entenderlos casi a las malas... 
@@ -197,5 +197,15 @@ Se debe compilar
 gcc -o integers.out integers.c
 ```
 
+##Clase5
+###05/06/2015
+###Laboratorio
+Enviar archivos de c a un archivo en markdown a traves de bash
+
+```
+for file in $(ls *.c)
+do
+echo "nombre de archivo:$file">>arch.md
+```
 
 
