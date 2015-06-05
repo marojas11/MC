@@ -48,6 +48,12 @@ done
 
 3. Escriba un programa en C que genere 1000 puntos aleatorios uniformemente distribuidos sobre una esfera de radio unitario. Implemente la idea descrita al final del artículo [Sphere point picking](http://mathworld.wolfram.com/SpherePointPicking.html) y utilice la implementación para generar número con distribución normal [aquí](http://c-faq.com/lib/gaussian.html) detallada. Compile, ejecute y rediriga la salida al archivo `aleatorios_esfericos`. Luego escriba una secuencia de comandos de `gnuplot` para graficar estos puntos usando `splot`.
 
-
+	+ Ciclo en el programa c para generar numero aleatorio para x,y,z con distribución normal 0,1
+	+ Hallar la norma sobre R3 (x,y,z) 
+	+ printf para formatearlo para gnuplot
+	+ compilamos
+	+ ejectamos
+	+ csv
+	+ gnuplot
 
 **Al terminar la clase ejecute `lottery.sh` para saber si su taller va a ser revisado.**
