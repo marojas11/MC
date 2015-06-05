@@ -272,11 +272,18 @@ echo "nombre de archivo:$file">>arch.md
 	EOF
 ```
 ###Clase
-####MAke 
+MAke 
 Para prerrequisitos
 
 Ejercicio de la esfera [taller3](https://github.com/marojas11/MC/tree/master/Talleres/Taller3)
-
-
 Metodo de MonteCarlo. Numeros aleatorios, áreas
+`set view equal xyz`
+####Python
+filosofía, estruucturas, énfasis, simple, indentación importante y funcional
+
+Interfaz: Scripts, sin arandelas, cuadernos de ipython, fases y ambientes de desarrollo
+Python es un lenguaje orientado a objetos, aritmética, cadenas de caracteres, ascii, numpy, scipy, turtle,solicitar información al usuario, expresiones booleanas, condicionales, ciclos con while, i .. else, for, listas de distintos tipos, si es negativo toma de atras para adelante (slice nutation),
+Diccionarios
+
+Ipython, markdown, secciones y subsecciones, arrays (numpy),vectorización de funciones, rapidez de código, funciones, variables locales o globales, funciones predeterminadas, funciones recursivas (stack de llamados de python, referencia al late) 
 
