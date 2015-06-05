@@ -147,6 +147,15 @@ sed -E 's/^.{5}$//g' wikipedia.txt >a.txt
 sed -E 's/^\s{4}//g' a.txt > wikipedia.txt 
 sed -E 's/(: )/\t/g' wikipedia.txt > a.txt
 ```
+3. No me funcionó el link, sin embargo utilizare un link encontrado por medio de google para trabajar [pi 10 million digits](http://pi.karmona.com/). Usando `sed -E 's/<[^>]*>//g'  ` para eliminar todos los códigos html
+```
+sed -E 's/<[^>]*>//g' pi.txt > pi2.txt
+sed "1d" pi2.txt >pi.txt
+sed -E 's/^.+\./3./g' pi.txt > pi2.txt 
+sed -E 's/(.{20})/$1\n/g' pi2.txt >PIslices20.dat
+
+```
+
 
 
 ##Clase4
@@ -174,11 +183,14 @@ set timefmt "%m/%d/%Y"
 ```
 ##Información de Expansion del Universo
 ley de expasion de Hubble
-realizar un fig oregresion 
+
+realizar un fig o regresion 
+```
 y(x)=m*x+b
+
 fit y(x)  'galaxies.csv' using 2:3 via m,b
 replot 
-
+```
 ###Lenguaje C
 Se debe compilar
 ```
