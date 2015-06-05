@@ -207,76 +207,28 @@ for file in $(ls *.c)
 do
 echo "nombre de archivo:$file">>arch.md
 ```
-???
-```
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <math.h>
-
-	double gaussrand (void);
-
-	int main(void)
-	{
-		double randx;
-		double randy;
-		double randz;
-		double norm;
-		for( int i=0; i<=5000; i++)
-		{
-			randx=gaussrand();
-			randy=gaussrand();
-			randz=gaussrand();
-			norm=sqrt(randx*randx + randy*randy + randz*randz);
-			randx=randx/norm;
-			randy=randy/norm;
-			randz=randz/norm;
-			printf("%f,%f,%f\n", randx,randy,randz);
-		}
-	return 0;
-	}
 
 
-	/*Taken from http://c-faq.com/lib/gaussian.html*/
-
-	double gaussrand()
-	{
-		static double V1, V2, S;
-		static int phase = 0;
-		double X;
-
-	if(phase == 0) {
-		do {
-			double U1 = (double)rand() / RAND_MAX;
-			double U2 = (double)rand() / RAND_MAX;
-
-			V1 = 2 * U1 - 1;
-			V2 = 2 * U2 - 1;
-			S = V1 * V1 + V2 * V2;
-			} while(S >= 1 || S == 0);
-
-		X = V1 * sqrt(-2 * log(S) / S);
-	} else
-		X = V2 * sqrt(-2 * log(S) / S);
-
-	phase = 1 - phase;
-
-	return X;
-	}
-```
-
-```
-	gnuplot << EOF
-		set datafile separator ","
-		set view equal xyz
-		splot "sphericalrands.csv" using 1:2:3
-	EOF
-```
 ###Clase
-####MAke 
+MAke 
 Para prerrequisitos
 
 Ejercicio de la esfera [taller3](https://github.com/marojas11/MC/tree/master/Talleres/Taller3)
-
-
 Metodo de MonteCarlo. Numeros aleatorios, áreas
+`set view equal xyz`
+####Python
+filosofía, estruucturas, énfasis, simple, indentación importante y funcional
+
+Interfaz: Scripts, sin arandelas, cuadernos de ipython, fases y ambientes de desarrollo
+Python es un lenguaje orientado a objetos, aritmética, cadenas de caracteres, ascii, numpy, scipy, turtle,solicitar información al usuario, expresiones booleanas, condicionales, ciclos con while, i .. else, for, listas de distintos tipos, si es negativo toma de atras para adelante (slice nutation),
+Diccionarios
+
+Ipython, markdown, secciones y subsecciones, arrays (numpy),vectorización de funciones, rapidez de código, funciones, variables locales o globales, funciones predeterminadas, funciones recursivas (stack de llamados de python, referencia al late) 
+
+####Tarea
+```
+set dumb plot
+```
+Hacer un ciclo
+
 
