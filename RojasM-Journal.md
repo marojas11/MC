@@ -210,7 +210,7 @@ echo "nombre de archivo:$file">>arch.md
 
 
 ###Clase
-MAke 
+MAke ->proxima clase
 Para prerrequisitos
 
 Ejercicio de la esfera [taller3](https://github.com/marojas11/MC/tree/master/Talleres/Taller3)
@@ -230,5 +230,29 @@ Ipython, markdown, secciones y subsecciones, arrays (numpy),vectorización de fu
 set dumb plot
 ```
 Hacer un ciclo
+
+
+##Clase6
+###09/06/2015
+
+Notebooks de ipython
+
+Problema de los 3 cuerpos, mathematica
+```
+
+f[n_]=Sum[If[i=!n,1/((x_n-x_i)^2+(y_n-y_i)^2)^3/2{x_i-x_n,y_i-y_n},{0,0}],{i,1,3}];
+
+```
+####Make
+Es para manejar la compilación de programas escritos en lenguejes tales como C, build manager, build file
+
++ very cryptic little language,
++ Make for intern at Bell Labs in 1975. 
++ A Makefile describes how files depend on each other, and how to update out-of-date files.
++ Use patterns, rules, and variables to eliminate redundancy.
++ Use macros to control operation.
+
++Makefile
+    
 
 
