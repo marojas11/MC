@@ -243,7 +243,7 @@ Problema de los 3 cuerpos, mathematica
 f[n_]=Sum[If[i=!n,1/((x_n-x_i)^2+(y_n-y_i)^2)^3/2{x_i-x_n,y_i-y_n},{0,0}],{i,1,3}];
 
 ```
-####Make
+####HandsOn4: Make
 Es para manejar la compilación de programas escritos en lenguejes tales como C, build manager, build file
 
 + very cryptic little language,
