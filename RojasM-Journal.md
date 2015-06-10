@@ -1,4 +1,4 @@
-#Primera Semana
+#Bitácora Métodos Computacionales
 ##Primera Clase <date>
 ###27/05/2015
 ¡Hola mundo!, comienzo **Metodos Computacionales**
