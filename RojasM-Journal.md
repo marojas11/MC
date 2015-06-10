@@ -278,6 +278,6 @@ Los diferentes lenguajes de programación que hemos aprendido en esta primera et
   show()
   
   ```
-  ```
+  Animaciones a mano, con un for y guardado en imágenes que se puedan unir en un mencoder, convert
   
 
