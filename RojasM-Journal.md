@@ -254,5 +254,5 @@ Es para manejar la compilación de programas escritos en lenguejes tales como C,
 
 +Makefile
     
-
-
+####Proyecto
+Los diferentes lenguajes de programación que hemos aprendido en esta primera etapa del curso ayudan a construir una buenas bases para la edificación de diversos programas que sean de gran utilidad para las tareas que realizamos hoy en día. Ciclos, gráficas, manejo de archivos y bases de datos son fundamentales para resolver problemas tanto físicos como matemáticos que son demasiado complicados para realizar a mano. Me gustaría poder resolver ecuaciones diferenciales parciales de una forma más sencilla debido a su amplia aplicación entre ellos los problemas de transferencia de calor, masa y momentum, Blasius para capa límite.
