@@ -280,4 +280,25 @@ Los diferentes lenguajes de programación que hemos aprendido en esta primera et
   ```
   Animaciones a mano, con un for y guardado en imágenes que se puedan unir en un mencoder, convert
   
-
+2. HandsOn5
+    Gráficas en matplotlib con una gran cantidad de posibilidades de edición además de las animaciones 
+    Para graficar las figuras de Lissajous usé las siguientes líneas
+```
+figure(figsize=(20,20))
+def x(t,A,a,d):
+    return A*sin(a*t+d)
+def y(t,B,b):
+    return B*cos(b*t)
+d=pi/2
+t1=np.arange(0.0,2*pi,0.01)
+c=0
+for a in range(1,6,1):
+    for b in range (2,7,1):
+        c+=1
+        subplot(5,5,c)
+        plot(x(t1,1,a,d), y(t1,1,b) )
+       
+        tick_params(axis='x', which='both',  bottom='off',  top='off',  labelbottom='off')
+        tick_params(axis='y', which='both',  right='off',  left='off',  labelleft='off')
+ ```
+    
