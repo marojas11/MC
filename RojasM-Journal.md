@@ -301,4 +301,6 @@ for a in range(1,6,1):
         tick_params(axis='x', which='both',  bottom='off',  top='off',  labelbottom='off')
         tick_params(axis='y', which='both',  right='off',  left='off',  labelleft='off')
  ```
-    
+##Clase8
+###13/06/2015
+####HandsOn6
