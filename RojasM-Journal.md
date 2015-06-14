@@ -304,3 +304,15 @@ for a in range(1,6,1):
 ##Clase8
 ###13/06/2015
 ####HandsOn6
+
+#####Errors and Uncertainties in Computation
+
+**Tipos de Errores**
+
+1. Blunders or bad theory --> Wrong data files, typography
+2. Random Errors          --> Fluctuations, reproducibility
+3. Aproximation Errors    --> Simplifying, aproximations, algorithmic error
+4. Round-off Errors       --> Floating-point numbers,
+
+
+
