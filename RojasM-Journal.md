@@ -315,4 +315,34 @@ for a in range(1,6,1):
 4. Round-off Errors       --> Floating-point numbers,
 
 
+##Clase9
+###16/06/2015
+####Interpolación
+Libro de Sherer cap2
+
++ splain cúbico...
++ Lagrange: polinomios
+  (xo,yo)...(xk,yk) Encontrar el polinomio de orden k que pasa por todos los puntos.
+
+  ```
+from scipy import interpolate
+from scipy_optimize import root
+from IPython display import HTML
+función np.polyld([0,1]) regresa una función 
+  ```
++ Diferencias divididas
+
++ Scipy Interpolate
+  1-D function e
+  genfromtxt con urls
+  2-D 
+  np.mgrid para evaluar funciones de varias dimensiones
+  plt.pcolor para colorear arreglos,
++ Criterios de mínimos cuadrados
+  Para que pasen cerca a los puntos sin obligarlos a pasar
+  polifit
+  curvefit
+  poli1d
+  Regresión Hubble
+  p0(0,0) parametros iniciales
 
