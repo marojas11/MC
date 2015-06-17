@@ -345,4 +345,20 @@ función np.polyld([0,1]) regresa una función
   poli1d
   Regresión Hubble
   p0(0,0) parametros iniciales
+####HandsOn7
+Para realizar el ajuste usé la siguiente ecuación 
+$\mathbf{B}({\mathbf{r}})=\frac{\mu_{0}}{4\pi}(\frac{2\mathbf{m}}{r^{3}}).$
+Luego con la ayuda de curve_fit obtuve el valor de la constante y despejé el momento magnético
+```
+poly=genfromtxt("campoMagnetico.tsv",delimiter="\t")
+x=poly[1:6,0]/100.0
+B=poly[1:6,1]/10.0**6
+def func(x,a):
+    return a/x**3
+fit=curve_fit(func, x, B)
+print "El momento magnético corresponde a: ",  fit[0][0]/(10.0**-7*2)
+```
+`![Obtuve esta gráfica](pictures/avatar.png "titulo")`
+####Proyecto
+Teniendo en cuenta que los notebook de python tienen una más amplia oferta de funciones y comando a para trabajar, además de que es muy gráfico y permite una fácil visualización mientras la versión sea la correcta, me gustaría implementar una función que permita visualizar de una mejor manera el comportamiento de las funciones de transferencia de masa y calor, como por ejemplo la función desarrollada por Blasius para capa límite
 
