@@ -313,7 +313,15 @@ for a in range(1,6,1):
 2. Random Errors          --> Fluctuations, reproducibility
 3. Aproximation Errors    --> Simplifying, aproximations, algorithmic error
 4. Round-off Errors       --> Floating-point numbers,
-
+    - Subtractive cancellation
+    - Round off error in a single step
+    - Round off error accumulation
++ Errores en funciones Bessel
+    - Relaciones numéricas Recursivas
++ Error experimental en investigación
+    - Errores de aproximación
+    - Errores de redondeo
+    - Error assessment (valoración de errores)
 
 ##Clase9
 ###16/06/2015
