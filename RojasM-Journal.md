@@ -370,3 +370,36 @@ print "El momento magnético corresponde a: ",  fit[0][0]/(10.0**-7*2)
 ####Proyecto
 Teniendo en cuenta que los notebook de python tienen una más amplia oferta de funciones y comando a para trabajar, además de que es muy gráfico y permite una fácil visualización mientras la versión sea la correcta, me gustaría implementar una función que permita visualizar de una mejor manera el comportamiento de las funciones de transferencia de masa y calor, como por ejemplo la función desarrollada por Blasius para capa límite
 
+
+##Clase10
+###17/06/2015
+####Github
+
+Ramas,branches,merge
+SourceTree
+
+
+```
+git init
+echo "Primero" >>a1.txt
+git add a1.txt
+git commit -m"Primero"
+#Historia
+git log
+git checkout 128husdhq7e #hash, puede ser los iniciales
+git status
+git push
+git pull
+git clone
+#Ramas, el asterisco muestra la actual
+git branch
+git branch rama1
+#Cambiar a otra rama
+git checkout rama1
+echo "Primero2" >>a2.txt
+git add a1.txt
+git commit -m"Otro commit"
+#Merge
+git merge rama1
+#Etiquetas
+git tag -a 
