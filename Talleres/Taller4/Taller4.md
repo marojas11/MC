@@ -9,7 +9,89 @@ Haga una copia de este archivo en su repositorio de GitHub en la carpeta /MC/Tal
 
 1. Del segundo capítulo del [libro de Scherer](http://link.springer.com.ezproxy.uniandes.edu.co:8080/book/10.1007\%2F978-3-642-13990-1) resuelva los literales c y d del problema 2.1.
 
+```
+%pylab inline
+def lagrangep(absc,j):
+    pol=np.poly1d([0,1])
+    k=len(absc)
+    for m in range(k):
+        if m!=j:
+            pol*=1./(absc[j]-absc[m])*np.poly1d([1.,-absc[m]])
+    return pol   
+
+def interlagr(absc,orde):
+    poly=np.poly1d([0])
+    for i in range(len(absc)):
+        poly+=orde[i]*lagrangep(absc,i)
+    return poly
+
+
+x=linspace(0,2*pi,5)
+y=sin(x)
+po=interlagr(x,y)
+print po
+```
+```
+linx=linspace(0,2*pi,100)
+plot(linx,po(linx))
+scatter(x,y)
+plot(linx,sin(linx),c='y')
+```
+```
+for i in range(5,11):
+    x=linspace(0,2*pi,i)
+    y=sin(x)
+    po=interlagr(x,y)
+    print po
+    linx=linspace(0,2*pi,100)
+    plot(linx,po(linx))
+plot(linx,sin(linx),c='y')
+```
+```
+from scipy import interpolate
+x=range(-3,4)
+ypulse=[ 0,0,0,1, 0 ,0, 0]
+ystep=[ 0,0,0,1, 1 ,1 ,1]
+figure(figsize(20,10))
+scatter(x,ypulse)
+interpol_cubic = interpolate.interp1d(x,ypulse,kind='cubic')
+interpol_linear = interpolate.interp1d(x,ypulse,kind='linear')
+
+xvals=np.linspace(-3,3,200)
+subplot(1,3,1)
+scatter(x,ypulse)
+plot(xvals,interpol_cubic(xvals),label="cubic")
+subplot(1,3,2)
+scatter(x,ypulse)
+plot(xvals,interpol_linear(xvals),label="linear")
+
+po=interlagr(x,ypulse)
+subplot(1,3,3)
+scatter(x,ypulse)
+plot(xvals,po(xvals))
+```
+```
+figure(figsize(20,10))
+
+interpol_cubic = interpolate.interp1d(x,ystep,kind='cubic')
+interpol_linear = interpolate.interp1d(x,ystep,kind='linear')
+
+xvals=np.linspace(-3,3,200)
+subplot(1,3,1)
+scatter(x,ystep)
+plot(xvals,interpol_cubic(xvals),label="cubic")
+subplot(1,3,2)
+scatter(x,ystep)
+plot(xvals,interpol_linear(xvals),label="linear")
+
+po=interlagr(x,ystep)
+subplot(1,3,3)
+scatter(x,ystep)
+plot(xvals,po(xvals))
+```
+
 2. Leer del libro [Numerical Methods and Optimization](http://ezproxy.uniandes.edu.co:8080/login?url=http://dx.doi.org/10.1007/978-3-319-07671-3) de *Eric Walter* los ejemplos de la sección 5.2: *Computer experiments*, *Prototyping* y *Mining surveys*.  
+
 
 3. La implementación de cierto algoritmo necesita puntos uniformemente muestreados pero los datos que se tienen son los mostrados en la tabla de abajo. Produzca una nueva tabla con el mismo número de líneas pero con muestreo uniforme usando un *cubic spline* .
 
@@ -39,6 +121,28 @@ Haga una copia de este archivo en su repositorio de GitHub en la carpeta /MC/Tal
 |4.19566321688|0.0396966472625|
 |4.3105185461|-0.0681282942773|
 |4.45641816306|-0.0704087548339|
+
+```
+poly=genfromtxt("taller4.tsv",delimiter="\t")
+x=poly[:,0]
+y=poly[:,1]
+scatter(x,y)
+
+
+print ylin
+```
+```
+cubic = interpolate.interp1d(x,y,kind='cubic')
+
+a=len(x)
+xlin=linspace(x[0],x[a-1],a)
+ylin=cubic(xlin)
+scatter(x,y)
+
+plot(xlin,ylin)
+
+```
+
 
 
 **Al terminar la clase ejecute `lottery.sh` para saber si su taller va a ser revisado.**
