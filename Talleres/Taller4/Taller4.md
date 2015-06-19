@@ -92,6 +92,12 @@ plot(xvals,po(xvals))
 
 2. Leer del libro [Numerical Methods and Optimization](http://ezproxy.uniandes.edu.co:8080/login?url=http://dx.doi.org/10.1007/978-3-319-07671-3) de *Eric Walter* los ejemplos de la sección 5.2: *Computer experiments*, *Prototyping* y *Mining surveys*.  
 
+	+ Computer Experiments: Simulation is an easier manner of design
+	+ Prototyping : Permits a better form of determinete experimental parameters
+	+ Mining surveys: Interpolation methods replace a great quantity of dates
+
+
+
 
 3. La implementación de cierto algoritmo necesita puntos uniformemente muestreados pero los datos que se tienen son los mostrados en la tabla de abajo. Produzca una nueva tabla con el mismo número de líneas pero con muestreo uniforme usando un *cubic spline* .
 
@@ -137,12 +143,45 @@ cubic = interpolate.interp1d(x,y,kind='cubic')
 a=len(x)
 xlin=linspace(x[0],x[a-1],a)
 ylin=cubic(xlin)
-scatter(x,y)
+scatter(x,y, label="data values")
 
-plot(xlin,ylin)
+plot(xlin,ylin, label="cubic spline")
+legend()
+xlabel("x")
+ylabel("y")
 
 	```
+	```
 
+print "|     x        |      y     |"
+for i in range(0,len(xlin)):
+    print "|", xlin[i],"|",ylin[i],"|"
+	```
+|     x        |      y     |
+| 0.138490669327 | 2.30060161547 |
+| 0.326226647315 | 2.13557983804 |
+| 0.513962625304 | 1.39719881749 |
+| 0.701698603292 | 0.417206585909 |
+| 0.889434581281 | -0.508199547139 |
+| 1.07717055927 | -1.19852808033 |
+| 1.26490653726 | -1.4736082803 |
+| 1.45264251525 | -1.18833620006 |
+| 1.64037849323 | -0.55652504403 |
+| 1.82811447122 | 0.171218763615 |
+| 2.01585044921 | 0.779865462088 |
+| 2.2035864272 | 1.18452422396 |
+| 2.39132240519 | 1.37314208846 |
+| 2.57905838318 | 1.41448149449 |
+| 2.76679436116 | 1.41176113173 |
+| 2.95453033915 | 1.38826705753 |
+| 3.14226631714 | 1.28426676118 |
+| 3.33000229513 | 1.11616041679 |
+| 3.51773827312 | 0.902468822018 |
+| 3.70547425111 | 0.661712774525 |
+| 3.89321022909 | 0.412413071972 |
+| 4.08094620708 | 0.173090512018 |
+| 4.26868218507 | -0.0349501128801 |
+| 4.45641816306 | -0.0704087548339 |
 
 
 **Al terminar la clase ejecute `lottery.sh` para saber si su taller va a ser revisado.**
