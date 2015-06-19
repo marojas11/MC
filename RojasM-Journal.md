@@ -403,3 +403,20 @@ git commit -m"Otro commit"
 git merge rama1
 #Etiquetas
 git tag -a 
+```
+
+##Clase11
+###19/06/2015
+####Transformada Discreta de  Fourier y filtros en imágenes 
+
+Se debe utilizarr con puntos igualmente  espaciados (criterio de optimización: uniformemente  muestreada)
+
+Si no se debe hacer interpolación. 
+
+Hay una cantidad de puntos óptimos con la transformada rápida de fourier con potencias de 2
+
+####Filtrado de señales 
+
+goo.gl/f7bhZZ
+
+
