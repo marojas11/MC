@@ -154,6 +154,7 @@ ylabel("y")
 	```
 
 print "|     x        |      y     |"
+print "|--------------------|-----------------|"
 for i in range(0,len(xlin)):
     print "|", xlin[i],"|",ylin[i],"|"
 	```
