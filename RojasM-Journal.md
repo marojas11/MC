@@ -265,7 +265,7 @@ Los diferentes lenguajes de programación que hemos aprendido en esta primera et
 + frontend
 + backend: Artistas
 
-1. Uso estandar de Matplotlib
+Uso estandar de Matplotlib
 
   + Crear una figura
   + Generar ejes y subplots
@@ -280,7 +280,7 @@ Los diferentes lenguajes de programación que hemos aprendido en esta primera et
   ```
   Animaciones a mano, con un for y guardado en imágenes que se puedan unir en un mencoder, convert
   
-2. HandsOn5
+####HandsOn5
     Gráficas en matplotlib con una gran cantidad de posibilidades de edición además de las animaciones 
     Para graficar las figuras de Lissajous usé las siguientes líneas
 ```
@@ -304,11 +304,13 @@ for a in range(1,6,1):
  Obtuve la siguiente imágen
  
  ![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/05/lissajous.png)
+ 
 ##Clase8
 ###13/06/2015
+
 ####HandsOn6
 
-#####Errors and Uncertainties in Computation
+Errors and Uncertainties in Computation: Landau
 
 **Tipos de Errores**
 
@@ -369,7 +371,9 @@ def func(x,a):
 fit=curve_fit(func, x, B)
 print "El momento magnético corresponde a: ",  fit[0][0]/(10.0**-7*2)
 ```
-`![Obtuve esta gráfica](pictures/avatar.png "titulo")`
+Obtuve esta gráfica con un muy buen ajuste
+![](https://github.com/marojas11/MC/blob/master/HandsOn/07/momentoMagnetico.png)
+
 ####Proyecto
 Teniendo en cuenta que los notebook de python tienen una más amplia oferta de funciones y comando a para trabajar, además de que es muy gráfico y permite una fácil visualización mientras la versión sea la correcta, me gustaría implementar una función que permita visualizar de una mejor manera el comportamiento de las funciones de transferencia de masa y calor, como por ejemplo la función desarrollada por Blasius para capa límite
 
@@ -428,7 +432,7 @@ goo.gl/f7bhZZ
 Se deriva una función con valores sin incertidumbre asociada. Tabla de valores espaciados, criterios de optimización. 
 La tarea es derivar en cada uno de los puntos de acuerdo a la definición de derivada
 
-$f\prime(x)=Lim_{h->0}\frac{f(x+h)-f(x)}{h}$ 
+$f(x)=Lim_{h->0}\frac{f(x+h)-f(x)}{h}$ 
 
 $f_{h}(x)=f\prime(x)+O(h)$
 
