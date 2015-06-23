@@ -435,9 +435,10 @@ goo.gl/f7bhZZ
 Se deriva una función con valores sin incertidumbre asociada. Tabla de valores espaciados, criterios de optimización. 
 La tarea es derivar en cada uno de los puntos de acuerdo a la definición de derivada
 
-$f(x)$ 
+$f(x)
 
-$f_{h}(x)=f\prime(x)+O(h)$
+
+$f_{h}(x)=f\prime(x)+O(h)
 
 forma en que se escala el error
 
