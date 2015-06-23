@@ -446,9 +446,13 @@ Diferencias adelantadas, atrasadas con el stepsize
 
 Métodos de extrapolación, estimar algo
 
+####HandsOn10: Ciclo Solar
+
+Por medio del procesamiento de los datos para las observaciones de manchas solares se observó un periodo aproximadio de 10 años. La limpieza del ruido para las frecuencias altas permitió determinar una mejor apreciación de su comportamiento. 
 
 
 
+![](https://github.com/marojas11/MC/blob/master/HandsOn/10/cicloSolar.png)
 
 
 
