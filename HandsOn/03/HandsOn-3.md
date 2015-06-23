@@ -9,3 +9,5 @@
 ## Python
 
 1. Del libro [The Python Workbook](http://link.springer.com.ezproxy.uniandes.edu.co:8080/book/10.1007%2F978-3-319-14240-1) haga los ejercicios: 10, 50, 63, 94 y 127. Escriba su solución en archivos `.py` con nombre `pyworkbook-no.py` en una carpeta en su repositorio llamada `/MC/python/exercises/`. Al ejecutar los archivos debe mostrarse al inicio el enunciado del ejercicio a resolver.
+
+[Solución](https://github.com/marojas11/MC/tree/master/python/exercises)
