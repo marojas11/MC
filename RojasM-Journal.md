@@ -358,9 +358,12 @@ función np.polyld([0,1]) regresa una función
   poli1d
   Regresión Hubble
   p0(0,0) parametros iniciales
+
 ####HandsOn7
 Para realizar el ajuste usé la siguiente ecuación 
+
 $\mathbf{B}({\mathbf{r}})=\frac{\mu_{0}}{4\pi}(\frac{2\mathbf{m}}{r^{3}}).$
+
 Luego con la ayuda de curve_fit obtuve el valor de la constante y despejé el momento magnético
 ```
 poly=genfromtxt("campoMagnetico.tsv",delimiter="\t")
