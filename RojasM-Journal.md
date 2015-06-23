@@ -301,6 +301,9 @@ for a in range(1,6,1):
         tick_params(axis='x', which='both',  bottom='off',  top='off',  labelbottom='off')
         tick_params(axis='y', which='both',  right='off',  left='off',  labelleft='off')
  ```
+ Obtuve la siguiente imágen
+ 
+ ![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/05/lissajous.png)
 ##Clase8
 ###13/06/2015
 ####HandsOn6
