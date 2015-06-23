@@ -419,4 +419,32 @@ Hay una cantidad de puntos óptimos con la transformada rápida de fourier con p
 
 goo.gl/f7bhZZ
 
+##Clase12
+###23/06/2015
+####Derivadas Numéricas
+Se deriva una función con valores sin incertidumbre asociada. Tabla de valores espaciados, criterios de optimización. 
+La tarea es derivar en cada uno de los puntos de acuerdo a la definición de derivada
+$f'(x)=Lim_(h->0)(f(x+h)-f(x))/h$ 
+$f_h(x)=f'(x)+O(h)$ forma en que se escala el error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
