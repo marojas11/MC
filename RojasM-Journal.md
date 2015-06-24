@@ -454,8 +454,15 @@ Por medio del procesamiento de los datos para las observaciones de manchas solar
 
 ![](https://github.com/marojas11/MC/blob/master/HandsOn/10/cicloSolar.png)
 
+##Clase12
+###23/06/2015
+####Integrales Numéricas 
+Intervalos Uniformes 
+Método trapezoidal, (b-a)/2*(f(a)+f(b)) área del trapecio
+Método de Simpson.interpolación de orden 2. f*(x)=f(a)*(x-c)(x-b)/((a-c)(a-b))+f(c)...+f(b)...
 
 
+Integración Gaussiana (Cuadraturas).Se busca elegir los valores de las abcisas (x_n). Buscar exactitud para polinomios de grado 2n-1 o menores. Interpolan los x_n con un polinomio de grado n-1. 
 
 
 
