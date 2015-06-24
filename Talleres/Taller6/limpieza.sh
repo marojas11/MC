@@ -1,1 +1,1 @@
- sed -E 's/<trkpt //g' running_dirty_nov.txt | sed -E 's/<[^>]*>//g'| sed -E 's/lon="(.+)"/\1/g'| sed -E 's/" lat="(.+)>/,\1/g'| sed -E 's/.+T(.+)\..+/\1/g'|sed -E 's/^\s+//g' >limpio.txt
+ sed -E 's/<trkpt //g' running_dirty_nov.txt | sed -E 's/<[^>]*>//g'| sed -E 's/lon="(.+)"/\1/g'| sed -E 's/" lat="(.+)>/,\1/g'| sed -E 's/.+T(.+)\..+/\1/g'|sed -E 's/^\s+//g' | sed -E 's/^([0-9])/,\1/g' |sed '1,21d' | sed ':a;N;$!ba;s/\n//g' | sed -E 's/(-)/\n\1/g'| sed -E 's/:/,/g' >limpio.csv 
