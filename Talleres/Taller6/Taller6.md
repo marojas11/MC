@@ -12,7 +12,7 @@
 	![](https://raw.githubusercontent.com/ComputoCienciasUniandes/MetodosComputacionalesLaboratorio/master/2015-V/actividades/talleres/Taller6/trip.png?raw=true =500x)
 
 	* ✵ Procese el archivo para dejarlo en un formato fácil de importar a Python.
-	* [Procedimiento](https://raw.githubusercontent.com/marojas11/MC/master/Talleres/Taller6/limpieza.sh)
+[Procedimiento](https://raw.githubusercontent.com/marojas11/MC/master/Talleres/Taller6/limpieza.sh)
 	* ✵ Haciendo los cambios de unidades pertinentes y teniendo en cuenta las características del [sistema de coordenadas esférico](http://mathworld.wolfram.com/SphericalCoordinates.html), calcular las coordenadas cartesianas de cada una de las posiciones registradas.
 	* ✵ Después calcular los vectores de desplazamiento espacio-temporal tomando como referencia la primera posición registrada. Desprecie la altura.
 	* ✵ Usando vectores unitarios en dirección norte y oriente, calcule las coordenadas de los vectores de desplazamiento en ese sistema de coordenadas local. Tome como coordenadas de referencia: latitud 4.5981, longitud -74.0758. Haga una gráfica con la trayectoria. Si quiere que aparezca junto con un mapa busque información sobre **smopy**. 
