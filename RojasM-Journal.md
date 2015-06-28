@@ -547,7 +547,7 @@ Por medio del procesamiento de los datos para las observaciones de manchas solar
 
 ![](https://github.com/marojas11/MC/blob/master/HandsOn/10/cicloSolar.png)
 
-##Clase12
+##Clase13
 ###24/06/2015
 ####Laboratorio 8
 
@@ -574,7 +574,7 @@ Integrales numéricas - Simpson Compuesto 3/8
 
 [Solution Notebook](https://github.com/marojas11/MC/blob/master/HandsOn/11/HandsOn11.ipynb)
 
-##Clase13
+##Clase14
 ###26/06/2015
 ####ODEs
 Ecuaciones Diferenciales Ordinarias
