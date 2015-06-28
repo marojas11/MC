@@ -39,13 +39,13 @@ Ya manejo git al fin!. Luego de intentar demasiadas veces subir un archivo al re
 
 :::bash
 
-```
+
 git pull origin
 git add carpeta/
 git add archivo.extension 
 git commit -a -m "Finish"
 git push origin master
-```
+
 Me pareció bastante interesante poder conocer anteriores commits realizados en git, además de toda la historia guardada por medio de los commits, no tenía idea que se pudiera hacer ello. 
 
 En clase exploramos ssh para ir a una página de internet sdf.org tal como super dimensional fortress en la cual hay muchas actividades disponibles en linea como juegos, chats, entre otros y tiene ya muchos años de existencia. 
