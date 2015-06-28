@@ -27,9 +27,9 @@
 	* ✵ Estime el tiempo requerido para terminar de recorrer 1, 2 .. 9 km y la posición (en latitud y longitud) en esos instantes.
 	* ✵✵ Ahora calcule la rapidez en función del tiempo usando *forward differences*. Tenga en cuenta que los datos no están uniformemente espaciados.
 	
-[Cuaderno de Ipython con Soluciones](https://github.com/marojas11/MC/blob/master/Talleres/Taller6/Taller6.ipynb)
+
 	* ✵✵✵ Lo anterior debe resultar muy irregular, proponga alguna estrategia para obtener algo más razonable e impleméntela.
 	
 
-
+[Cuaderno de Ipython con Soluciones](https://github.com/marojas11/MC/blob/master/Talleres/Taller6/Taller6.ipynb)
 
