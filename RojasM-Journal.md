@@ -36,7 +36,9 @@ Introducción, Git y Unix
 
 ####HandsOn1
 Ya manejo git al fin!. Luego de intentar demasiadas veces subir un archivo al repositorio entendí el ciclo diario. 
+
 :::bash
+
 ```
 git pull origin
 git add carpeta/
