@@ -21,9 +21,6 @@ y Metodos tales como
 5. EDP
 6. Metodos de MonteCarlo
 
-
-
-
 ##Clase 2
 ###29/05/2015
 
@@ -33,8 +30,13 @@ El ejercicio de markdown me permitió entender el funcionamiento de su codigo y 
 Los ejercicios de bash me han permitido entender mejor el funcionamiento de los comandos de awk, los cálculos en construcción a doble paréntesis, ciclos, comandos curiosos como figlet para cambiar a un formato gráfico las palabras. 
 
 ###Clase 
+Introducción, Git y Unix 
+
+[Slides](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/01-Intro.pdf)
+
 ####HandsOn1
 Ya manejo git al fin!. Luego de intentar demasiadas veces subir un archivo al repositorio entendí el ciclo diario. 
+::bash
 ```
 git pull origin
 git add carpeta/
@@ -57,7 +59,6 @@ var=$(echo $((1+2)))
 ```
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/01)
 
-#Semana 2
 ##Clase 3
 ###2/06/2015 
 ###Caracteres Especiales
@@ -140,7 +141,7 @@ EOF
 ```
 log para hacer entradas a la bitacora
 
-###Handson2
+###Hands on 2
 
 1. Expresión Regular ` ^.{4}\s ` donde el gorro representa inicio de linea, punto cualquier caracter, {4} que se repite 4 veces y \s para el espacio vacío. Permite hacer búsquedas o reemplazos de palabras de cuatro letras al inicio de una línea
 2. En bash
