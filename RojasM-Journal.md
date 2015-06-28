@@ -162,10 +162,10 @@ sed -E 's/(.{20})/$1\n/g' pi2.txt >PIslices20.dat
 
 ##Clase4
 ###03/06/2015
-###Laboratorio
+###Laboratorio 2
 
 No sé si fue suerte o no pero me van a revisar mi primer taller :( espero que me vaya bien, Para saberlo hice awk, fue casi automático, lo único fue cambiar el separador y todo bien. Hacer el punto de expresiones regulares no fue nada fácil, tuve que entenderlos casi a las malas... 
-Punto a punto fui haciendo los respectivos reemplazos y obtuve que el de menor cambio porcentual es la Registraduría, algo bastante "comun" nada sorprendente
+Punto a punto fui haciendo los respectivos reemplazos y obtuve que el de menor cambio porcentual es la Registraduría, algo bastante "comun" nada sorprendente.
 Con gnuplot he logrado comprobar la linealidad de la ley de kepler a través de los reemplazos correspondientes y su correcta alimentación 
 
 ###Tasas de Cambio: Dolares
