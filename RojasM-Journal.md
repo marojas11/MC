@@ -24,12 +24,12 @@ y Metodos tales como
 ##Clase 2
 ###29/05/2015
 
-###Primer Laboratorio
+####Primer Laboratorio
 Esta sesión de laboratorio me pareció bastante interesante aunque el tiempo fue demasiado corto para tantas actividades por realizar, o tal vez por lo que apenas empiezo a familiarizarme de nuevo con estos comandos. 
 El ejercicio de markdown me permitió entender el funcionamiento de su codigo y las posibilidades que tienen estos archivos para escribir texto de una forma rápida y sencilla. Además de agregar fácilmente lineas de código resaltadas en el texto.
 Los ejercicios de bash me han permitido entender mejor el funcionamiento de los comandos de awk, los cálculos en construcción a doble paréntesis, ciclos, comandos curiosos como figlet para cambiar a un formato gráfico las palabras. 
 
-###Clase 
+####Clase 
 Introducción, Git y Unix 
 
 [Slides](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/01-Intro.pdf)
@@ -37,14 +37,13 @@ Introducción, Git y Unix
 ####HandsOn1
 Ya manejo git al fin!. Luego de intentar demasiadas veces subir un archivo al repositorio entendí el ciclo diario. 
 
-:::bash
-
-
+```
 git pull origin
 git add carpeta/
 git add archivo.extension 
 git commit -a -m "Finish"
 git push origin master
+```
 
 Me pareció bastante interesante poder conocer anteriores commits realizados en git, además de toda la historia guardada por medio de los commits, no tenía idea que se pudiera hacer ello. 
 
@@ -63,7 +62,7 @@ var=$(echo $((1+2)))
 
 ##Clase 3
 ###2/06/2015 
-###Caracteres Especiales
+####Caracteres Especiales
 
 + ^ inicio de linea
 + $ fin de linea
@@ -79,6 +78,9 @@ var=$(echo $((1+2)))
 + \D No digitos
 + [^0-3] No numeros
 
+
+[Más sobre Regexp y C](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/02-regexp%2C%20gnuplot%20y%20C.pdf)
+
 Sed para usar expresiones regulares cuando no se que editor de texto me sirve ;(
 ```
  sed -E 's/\(.*\)//g' claseSem2.txt 
@@ -86,7 +88,7 @@ Sed para usar expresiones regulares cuando no se que editor de texto me sirve ;(
  sed -E 's/ +/,/g' claseSem2.txt 
 ```
 
-###Gnuplot
+####Gnuplot
 Programa para realizar gráficas
 ```
 gnuplot
@@ -98,7 +100,6 @@ plot [0:2*pi] sin(x)
 gnuplot entra a un sistema distinto, es necesario usar nuevos comandos
 ```
 gnuplot> set term 'qt' #Gráficas aparte
-
 gnuplot> plot sin(x)
 gnuplot> plot sin(x)/x
 gnuplot> plot sin(x)**x
@@ -109,18 +110,13 @@ gnuplot> exit
 ```
 Tambien paramétricas
 ```
-ma.rojas11@compufi17:~/MC> gnuplot
 gnuplot> set term 'qt'
 gnuplot> set parametric
-        dummy variable is t for curves, u/v for surfaces
-gnuplot> plot cos(t),sin(t)
 gnuplot> set size ratio 1
 gnuplot> plot cos(t),sin(t)
 gnuplot> unset parametric
-        dummy variable is x for curves, x/y for surfaces
 gnuplot> splot x**2+y**2
 gnuplot> set datafile separator ","
-gnuplot> plot "joviansatellites.csv" using 2:3
 gnuplot> plot "joviansatellites.csv" using 2:3 with lines
 gnuplot> plot "joviansatellites.csv" using 2:3 with circles
 gnuplot> plot "joviansatellites.csv" using 2:3 with linesp
@@ -130,8 +126,7 @@ gnuplot> cube(x)=x**3
 #Archivos
 gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
 ```
-Para SSh
-ssh ma.rojas11@compufi3.uniandes.edu.co
+
 
 PAaa integrar gnuplot con bash
 ```
@@ -141,9 +136,14 @@ gnuplot <<EOF
 .
 EOF
 ```
-log para hacer entradas a la bitacora
+**log** para hacer entradas a la bitacora
 
-###Hands on 2
+####SSH
+
+ssh ma.rojas11@compufi3.uniandes.edu.co
+sftp ...
+
+####Hands on 2
 
 1. Expresión Regular ` ^.{4}\s ` donde el gorro representa inicio de linea, punto cualquier caracter, {4} que se repite 4 veces y \s para el espacio vacío. Permite hacer búsquedas o reemplazos de palabras de cuatro letras al inicio de una línea
 2. En bash
@@ -165,13 +165,15 @@ sed -E 's/(.{20})/$1\n/g' pi2.txt >PIslices20.dat
 
 ##Clase4
 ###03/06/2015
-###Laboratorio 2
+####Laboratorio 2
 
 No sé si fue suerte o no pero me van a revisar mi primer taller :( espero que me vaya bien, Para saberlo hice awk, fue casi automático, lo único fue cambiar el separador y todo bien. Hacer el punto de expresiones regulares no fue nada fácil, tuve que entenderlos casi a las malas... 
 Punto a punto fui haciendo los respectivos reemplazos y obtuve que el de menor cambio porcentual es la Registraduría, algo bastante "comun" nada sorprendente.
 Con gnuplot he logrado comprobar la linealidad de la ley de kepler a través de los reemplazos correspondientes y su correcta alimentación 
 
-###Tasas de Cambio: Dolares
+[Files ](https://github.com/marojas11/MC/tree/master/Talleres/Taller2)
+
+####Tasas de Cambio: Dolares
 Limitar google site:http://...
 grep para filtrar lineas que nos interesa
 mac > pbcopy
@@ -186,7 +188,7 @@ plot 'dollar.csv'
 set xdata time #fijar el tipo de datos en x
 set timefmt "%m/%d/%Y"
 ```
-##Información de Expansion del Universo
+####Información de Expansion del Universo
 ley de expasion de Hubble
 
 realizar un fig o regresion 
@@ -196,7 +198,7 @@ y(x)=m*x+b
 fit y(x)  'galaxies.csv' using 2:3 via m,b
 replot 
 ```
-###Lenguaje C
+####Lenguaje C
 Se debe compilar
 ```
 gcc -o integers.out integers.c
@@ -204,7 +206,7 @@ gcc -o integers.out integers.c
 
 ##Clase5
 ###05/06/2015
-###Laboratorio 3
+####Laboratorio 3
 Enviar archivos de c a un archivo en markdown a traves de bash
 
 ```
@@ -216,7 +218,7 @@ echo "nombre de archivo:$file">>arch.md
 [Solución al Taller 3](https://github.com/marojas11/MC/tree/master/Talleres/Taller3)
 
 
-###Clase
+####Clase
 MAke ->proxima clase
 Para prerrequisitos
 
@@ -232,13 +234,17 @@ Diccionarios
 
 Ipython, markdown, secciones y subsecciones, arrays (numpy),vectorización de funciones, rapidez de código, funciones, variables locales o globales, funciones predeterminadas, funciones recursivas (stack de llamados de python, referencia al late) 
 
+[more about Python](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/03-Python.pdf)
+
 ####Tarea
 ```
 set dumb plot
 ```
 Hacer un ciclo
 
-####HandsOn 3
+####HandsOn 3 
+
+Ejercicios de Python 
 [Archivos](https://github.com/marojas11/MC/tree/master/python/exercises)
 
 
@@ -253,7 +259,11 @@ Problema de los 3 cuerpos, mathematica
 f[n_]=Sum[If[i=!n,1/((x_n-x_i)^2+(y_n-y_i)^2)^3/2{x_i-x_n,y_i-y_n},{0,0}],{i,1,3}];
 
 ```
-####HandsOn4: Make
+####HandsOn4
+
+BashProfile-Make-Python
+
+Make
 
 Es para manejar la compilación de programas escritos en lenguejes tales como C, build manager, build file
 
@@ -262,8 +272,8 @@ Es para manejar la compilación de programas escritos en lenguejes tales como C,
 + A Makefile describes how files depend on each other, and how to update out-of-date files.
 + Use patterns, rules, and variables to eliminate redundancy.
 + Use macros to control operation.
++ Makefile
 
-+Makefile
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/04)
 
 ####Proyecto
@@ -276,7 +286,6 @@ Los diferentes lenguajes de programación que hemos aprendido en esta primera et
 Experimento 1:  Maxwell- Boltzman
 
 [Solución](https://github.com/marojas11/MC/tree/master/Experimentos/Exp1)
-
 
 ####Matplotlib
 
@@ -299,9 +308,12 @@ Uso estandar de Matplotlib
   ```
   Animaciones a mano, con un for y guardado en imágenes que se puedan unir en un mencoder, convert
   
+  [Ejemplos](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/05-matplotlib%20-%201.ipynb)
+  [Ejemplos 2](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/05-matplotlib%20-%202.ipynb)
 ####HandsOn5
-    Gráficas en matplotlib con una gran cantidad de posibilidades de edición además de las animaciones 
-    Para graficar las figuras de Lissajous usé las siguientes líneas
+
+  Gráficas en matplotlib con una gran cantidad de posibilidades de edición además de las animaciones 
+  Para graficar las figuras de Lissajous usé las siguientes líneas
 ```
 figure(figsize=(20,20))
 def x(t,A,a,d):
@@ -325,12 +337,13 @@ for a in range(1,6,1):
  ![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/05/lissajous.png)
  
  [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/05)
+ 
 ##Clase8
 ###13/06/2015
 
 ####HandsOn6
-
-Errors and Uncertainties in Computation: Landau
+Landau
+Errors and Uncertainties in Computation:
 
 **Tipos de Errores**
 
@@ -356,7 +369,7 @@ Errors and Uncertainties in Computation: Landau
 ####Interpolación
 Libro de Sherer cap2
 
-+ splain cúbico...
++ spline cubic...
 + Lagrange: polinomios
   (xo,yo)...(xk,yk) Encontrar el polinomio de orden k que pasa por todos los puntos.
 
@@ -382,7 +395,12 @@ función np.polyld([0,1]) regresa una función
   Regresión Hubble
   p0(0,0) parametros iniciales
 
+[Examples](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/06-Interpolation.ipynb)
+
 ####HandsOn7
+
+Interpolación y Ajustes
+
 Para realizar el ajuste usé la siguiente ecuación 
 
 $\mathbf{B}({\mathbf{r}})=\frac{\mu_{0}}{4\pi}(\frac{2\mathbf{m}}{r^{3}}).$
@@ -398,6 +416,7 @@ fit=curve_fit(func, x, B)
 print "El momento magnético corresponde a: ",  fit[0][0]/(10.0**-7*2)
 ```
 Obtuve esta gráfica con un muy buen ajuste
+
 ![](https://github.com/marojas11/MC/blob/master/HandsOn/07/momentoMagnetico.png)
 
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/07)
@@ -442,12 +461,10 @@ Realización del Taller 4. A partir del la realización de un **cubic spline** o
 La solución completa se encuentra en el siguiente [Cuaderno de Ipython](https://github.com/marojas11/MC/blob/master/Talleres/Taller4/Taller4.ipynb)
 
 
-
 ####Github
 
 Ramas,branches,merge
 SourceTree
-
 
 ```
 git init
@@ -475,6 +492,7 @@ git merge rama1
 git tag -a 
 ```
 ####HandsOn 8 
+Finding roots- Jupiter
 
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/08)
 
@@ -488,15 +506,18 @@ Realización del Taller 5 Fenómeno de Gibbs - Fourier - Git Tags
 
 ####Transformada Discreta de  Fourier y filtros en imágenes 
 
-Se debe utilizarr con puntos igualmente  espaciados (criterio de optimización: uniformemente  muestreada)
+Se debe utilizar con puntos igualmente  espaciados (criterio de optimización: uniformemente  muestreada)
 
 Si no se debe hacer interpolación. 
 
 Hay una cantidad de puntos óptimos con la transformada rápida de fourier con potencias de 2
 
-####Filtrado de señales 
+[examples](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/07-Fourier.ipynb)
 
 ####HandsOn 9
+Series de Fourier- DFT y Procesamiento de Imágenes
+
+![Lena](https://raw.githubusercontent.com/ComputoCienciasUniandes/MetodosComputacionales/master/hands_on/figures/horizontallena.png?raw=true%20=400x)
 
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/09)
 
@@ -508,9 +529,6 @@ goo.gl/f7bhZZ
 Se deriva una función con valores sin incertidumbre asociada. Tabla de valores espaciados, criterios de optimización. 
 La tarea es derivar en cada uno de los puntos de acuerdo a la definición de derivada
 
-$f(x)$
-
-
 $f_{h}(x)=f\prime(x)+O(h)$
 
 forma en que se escala el error
@@ -519,11 +537,11 @@ Diferencias adelantadas, atrasadas con el stepsize
 
 Métodos de extrapolación, estimar algo
 
+[Numerical Derivatives](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/08-Numerical%20Derivatives.ipynb)
+
 ####HandsOn10: Ciclo Solar
 
 Por medio del procesamiento de los datos para las observaciones de manchas solares se observó un periodo aproximadio de 10 años. La limpieza del ruido para las frecuencias altas permitió determinar una mejor apreciación de su comportamiento. 
-
-
 
 ![](https://github.com/marojas11/MC/blob/master/HandsOn/10/cicloSolar.png)
 
@@ -543,12 +561,29 @@ Método trapezoidal, (b-a)/2*(f(a)+f(b)) área del trapecio
 Método de Simpson.interpolación de orden 2. f*(x)=f(a)*(x-c)(x-b)/((a-c)(a-b))+f(c)...+f(b)...
 
 
-Integración Gaussiana (Cuadraturas).Se busca elegir los valores de las abcisas (x_n). Buscar exactitud para polinomios de grado 2n-1 o menores. Interpolan los x_n con un polinomio de grado n-1. 
+Integración Gaussiana (Cuadraturas).Se busca elegir los valores de las abcisas (x_n).
+Buscar exactitud para polinomios de grado 2n-1 o menores. Interpolan los x_n con un polinomio de grado n-1. 
+
+[Numerical Integrates](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/09-Numerical%20Integration.ipynb)
+
+####Hands On 11
+
+Integrales numéricas - Simpson Compuesto 3/8
+
+[Solution Notebook](https://github.com/marojas11/MC/blob/master/HandsOn/11/HandsOn11.ipynb)
 
 ##Clase13
 ###26/06/2015
-####RungeKutta 3ord-4ord
+####ODEs
+Ecuaciones Diferenciales Ordinarias
 
+Método de Euler y Regla del Punto Medio
+
+RungeKutta 3ord-4ord
+
+El problema de Kepler
+
+[ODEs](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/10-ODE.ipynb)
 
 
 
