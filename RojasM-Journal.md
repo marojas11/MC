@@ -139,9 +139,11 @@ EOF
 **log** para hacer entradas a la bitacora
 
 ####SSH
-
-ssh ma.rojas11@compufi3.uniandes.edu.co
-sftp ...
+Entrar a compufísica desde casa 
+```
+ssh ma.rojas11@compufi3.uniandes.edu.co 
+```
+Descargar archivos `sftp` comandos: get
 
 ####Hands on 2
 
