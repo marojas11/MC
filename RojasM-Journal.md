@@ -588,7 +588,7 @@ El problema de Kepler
 [ODEs](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/10-ODE.ipynb)
 
 ##Clase15
-###26/06/2015
+###30/06/2015
 ####ODEs- 
 Metodos adaptativos
 
