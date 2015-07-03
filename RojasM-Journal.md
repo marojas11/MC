@@ -605,6 +605,11 @@ Sistema de Lorentz
 
 
 
+##Clase17
+###3/07/2015
+####PDEs Partial Differential Equations
+
+Condiciones Periódicas, condiciones iniciales absorbentes. 
 
 
 
