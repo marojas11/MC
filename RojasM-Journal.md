@@ -646,6 +646,11 @@ Ecuación LAplace
 
 $ \frac{d^2\phi}{dx^2} + \frac{d^2\phi}{dy^2}=0$
 
-Ecuación de Poisson
+##Clase19
+###8/07/2015
+####Ecuación de Poisson
 
-$ \frac{d^2\phi}{dx^2} + \frac{d^2\phi}{dy^2}=-4\pi G\rho$
+$ \frac{d^2\psi}{dx^2} + \frac{d^2\psi}{dy^2}=-4\pi G\rho$
+
+Ecuación de Schrodinger
+
