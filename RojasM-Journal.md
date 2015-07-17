@@ -654,3 +654,5 @@ $ \frac{d^2\psi}{dx^2} + \frac{d^2\psi}{dy^2}=-4\pi G\rho$
 
 Ecuación de Schrodinger
 
+####Animaciones en Compufis
+`%matplotlib tk "
