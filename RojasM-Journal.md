@@ -187,6 +187,7 @@ sed -E 's/(.{20})/$1\n/g' pi2.txt >PIslices20.dat
     0 AAAA*A**--+---------+---------+--------+---------+---------+--------++
       0         50       100       150      200       250       300       350
 ```
+[PlotFile](https://github.com/marojas11/MC/blob/master/HandsOn/02/plotFile.sh)
 
 [Archivos](https://github.com/marojas11/MC/tree/master/HandsOn/02)
 
