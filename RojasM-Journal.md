@@ -589,7 +589,6 @@ Método trapezoidal, (b-a)/2*(f(a)+f(b)) área del trapecio
 
 Método de Simpson.interpolación de orden 2. f*(x)=f(a)*(x-c)(x-b)/((a-c)(a-b))+f(c)...+f(b)...
 
-
 Integración Gaussiana (Cuadraturas).Se busca elegir los valores de las abcisas (x_n).
 Buscar exactitud para polinomios de grado 2n-1 o menores. Interpolan los x_n con un polinomio de grado n-1. 
 
@@ -606,9 +605,46 @@ Integrales numéricas - Simpson Compuesto 3/8
 ####ODEs
 Ecuaciones Diferenciales Ordinarias
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq1.png)
+
 Método de Euler y Regla del Punto Medio
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq2.png)
+
 RungeKutta 3ord-4ord
+
+```
+def RungeKutta(eta,t, f0, f1, f2):
+    
+    #Primer paso de Runge-Kutta
+    k1=eta*f1                            #f0=t*f1
+    l1=eta*f2                            #f1=t*f2
+    m1=eta*func3(f0,f2)                  #f2=t*func3
+    
+    #Segundo paso de Runge-Kutta
+    k2=eta*(f1+l1/2.)
+    l2=eta*(f2+m1/2.)
+    m2=eta*func3(f0+k1/2.,f2+m1/2.)
+    
+    #Tercer paso de Runge-Kutta
+    k3=eta*(f1+l2/2.)
+    l3=eta*(f2+m2/2.)
+    m3=eta*func3(f0+k2/2.,f2+m2/2.)
+    
+    #Cuarto paso de Runge-Kutta
+    k4=eta*(f1+l3)           
+    l4=eta*(f2+m3)           
+    m4=eta*func3(f0+k3,f2+m3) 
+    
+    #Aumento en los valores de las derivadas
+    f0+=(k1+2.*k2+2.*k3+k4)/6.
+    f1+=(l1+2.*l2+2.*l3+l4)/6.
+    f2+=(m1+2.*m2+2.*m3+m4)/6.
+    t+=eta
+    return t,f0, f1, f2
+```
+    
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq3.png)
 
 El problema de Kepler
 
@@ -616,20 +652,25 @@ El problema de Kepler
 
 ##Clase15
 ###30/06/2015
-####ODEs- 
-Metodos adaptativos
+####ODEs- Metodos adaptativos
 
 Cambiar el time step para estimar el error local no el global. 
+
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq4.png)
 
 Metodos Multipaso. Adam-Bashfort(documentación para scipy)
 Resolver Bessel
 Sistema de Lorentz
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq5.png)
+
 
 ##Clase16
 ###1/07/2015
 
-####ODEs-Adams-Bashforth- Calculos Simbolicos en Python
+####ODEs-Adams-Bashforth- 
+
+Calculos Simbolicos en Python
 
 ```
 from sympy import *
@@ -654,6 +695,14 @@ Taller 7 - El Atractor de Rössler
 
 ####PDEs Partial Differential Equations
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq6.png)
+
+```
+for i in range(1,int(M)):
+    Y[i] = Y[i-1] + alpha * (np.roll(Y[i-1],1)+np.roll(Y[i-1],-1)-2*Y[i-1])
+    Y[i,0]=0
+    Y[i,-1]=0
+```
 Condiciones Periódicas, condiciones iniciales absorbentes. 
 
 
@@ -666,20 +715,43 @@ Una vez realizada esta modelación es posible estimar los parámetros necesarios
 ##Clase18
 ###7/07/2015
 
-####Ecuacion Onda- Método de Relajación
+####Ecuacion Onda
+
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq7.png)
+
+
+Método de Relajación
+
+```
+guess=[]
+x=0.1
+for i in range(20):
+    x=np.cos(x)-0.5
+    guess.append(x)
+```
+
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq8.png)
+
 Para encontrar soluciones a las ecuaciones. 
 
-Ecuación LAplace
+Ecuación Laplace
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq9.png)
 $ \frac{d^2\phi}{dx^2} + \frac{d^2\phi}{dy^2}=0$
+
+
 
 ##Clase19
 ###8/07/2015
 ####Ecuación de Poisson
 
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq10.png)
+
 $ \frac{d^2\psi}{dx^2} + \frac{d^2\psi}{dy^2}=-4\pi G\rho$
 
 Ecuación de Schrodinger
+
+![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq11.png)
 
 ####Animaciones en Compufis
 `%matplotlib tk "
