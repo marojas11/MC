@@ -695,6 +695,9 @@ Taller 7 - El Atractor de Rössler
 
 ####PDEs Partial Differential Equations
 
+[PDEs](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/11-PDE.ipynb)
+
+
 ![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq6.png)
 
 ```
@@ -754,4 +757,16 @@ Ecuación de Schrodinger
 ![](https://raw.githubusercontent.com/marojas11/MC/master/HandsOn/eq11.png)
 
 ####Animaciones en Compufis
-`%matplotlib tk "
+`%matplotlib tk `
+
+
+##Clase20
+###10/07/2015
+####Monte Carlo
+
+[MonteCarlo Methods](https://github.com/ComputoCienciasUniandes/MetodosComputacionales/blob/master/slides/2015-V/12-MonteCarlo.ipynb)
+
+
+
+
+
